@@ -32,6 +32,7 @@ body{
     justify-content: space-between;
     border-bottom: 2px solid var(--textnav);
     position: sticky;
+    padding-top: .5rem;
     top: 0;
     left: 0;
     right: 0;
@@ -56,31 +57,30 @@ body{
     padding-bottom: 0.3rem;
     color: var(--text);
     text-decoration: none;
-    font-size: var(--fontpequena);
+    font-size: var(--fontgrande);
     transition: .3s ease-in-out;
 }
 
 .menu ul li a:hover{
     color: var(--textnav);
-    border-bottom: 1px solid var(--textnav);
-    padding-bottom: 0.15rem;
 }
 
 .svg-menu{
-    display: flex;
+    gap: 1rem;
+    display: inline-block;
     background-color: transparent;
+    position: relative;
     border: none;
     cursor: pointer;
     padding: 0;
     color: var(--text);
     font-family: Kameron;
-    font-size: 42px;
 }
 
 .menu .svg-menu:hover svg path {
     color: var(--textnav);
     stroke: var(--textnav);
-    transition: 0.3s ease-in-out;
+    transition: .3s ease-in-out;
 }
  
 .pesquisa{
@@ -88,6 +88,13 @@ body{
     color: #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--fontgrande);
+}
+
+.title{
+    font-size: var(--fontgrande);
+    color: var(--nav);
+    text-align: center;
+    margin-top: 6rem;
 }
 
 .corpo{
@@ -151,4 +158,48 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.svg-menu .tooltiptext {
+    font-size: 18px;
+    visibility: hidden;
+    width: fit-content;
+    background-color: var(--textnav);
+    color: var(--text);
+    text-align: center;
+    border-radius: 5px;
+    padding: .3rem;
+    bottom: -100%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.svg-menu:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.catego{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "d d d d d";
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.categodivs{
+    background-color: var(--nav);
+    grid-area: d;
+    width: 2rem;
 }
