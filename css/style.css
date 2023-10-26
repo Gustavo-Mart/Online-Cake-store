@@ -8,6 +8,9 @@
     --fontpequena:24px;
     background-color: #F2EAD3;
     font-family: 'Kameron', 'Tilt Prism', cursive;
+    scrollbar-color: var(--textnav) var(--nav);
+    scrollbar-width: thin;
+
 }
 
 ::selection {
@@ -16,6 +19,15 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+::-webkit-scrollbar {
+    width: .4rem;
+    background-color: var(--nav);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--textnav);
+    border-radius: 1rem;
+}
 body{
     width: 100%;
     height: 100vh;
@@ -94,17 +106,19 @@ body{
     font-size: var(--fontgrande);
     color: var(--nav);
     text-align: center;
-    margin-top: 6rem;
+    margin: 0;
 }
 
 .corpo{
     font-size: var(--fontpequena);
+    margin: 0;
 }
 
 .input-group {
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
   
 .input {
@@ -183,23 +197,50 @@ body{
     opacity: 1;
 }
 
-.catego{
+.container {
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "d d d d d";
-    gap: 1rem;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 15rem;
 }
 
-.categodivs{
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    color: var(--text);
+    width: 10em;
+    height: 10rem;
+    padding: 1rem;
+    border: 1px solid var(--textnav);
+    border-radius: 5px;
+    text-align: center;
     background-color: var(--nav);
-    grid-area: d;
-    width: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 0;
+}
+.img-card{
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer{
+    height: 5rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--nav);
+    color: var(--text);
 }
