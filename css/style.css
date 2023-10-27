@@ -101,6 +101,10 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--fontgrande);
 }
+.titlo{
+    margin: 0 40% 0 0;
+    width: fit-content;
+}	
 
 .title{
     font-size: var(--fontgrande);
@@ -111,7 +115,7 @@ body{
 
 .corpo{
     font-size: var(--fontpequena);
-    margin: 0;
+    margin: .3em 0 0 0;
 }
 
 .input-group {
@@ -123,12 +127,12 @@ body{
   
 .input {
     min-height: 3rem;
-    min-width: 20rem;
+    min-width: 16rem;
     width: 30rem;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     color: var(--text);
     font-size: 15px;
-    border:none;
+    border: none;
     border-radius: 6px 0 0 6px;
     background-color: var(--nav);
 }
@@ -155,12 +159,11 @@ body{
 }
   
 .input:focus, .input:focus-visible {
-    border-color: var(--textnav);
     outline: none;
 }
 
 .images{
-    margin: 5rem 8rem 0 0;
+    margin: 5rem 8rem 0 3rem;
     float: right;
     width: 350px;
     height: 350px;
@@ -204,7 +207,12 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-bottom: 15rem;
+}
+
+hr{
+    margin: 0;
+    color: var(--nav);
+    width: 10%;
 }
 
 .card-container {
@@ -217,14 +225,19 @@ body{
 
 .card {
     color: var(--text);
-    width: 10em;
-    height: 10rem;
+    width: 10rem;
+    height: 11rem;
     padding: 1rem;
-    border: 1px solid var(--textnav);
-    border-radius: 5px;
+    border: 2px solid var(--textnav);
+    border-radius: 1rem;
     text-align: center;
     background-color: var(--nav);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 .5em 0 ; /**/
+}
+.card:hover{
+    transition: .4s ease-in-out;
+    box-shadow: 0 4px 6px var(--textnav);
 }
 
 .card h2 {
@@ -233,14 +246,15 @@ body{
 }
 .img-card{
     width: 100%;
-    border-radius: 5px;
+    border-radius: .6rem;
 }
 
 footer{
-    height: 5rem;
+    height: 10rem;
     width: 100%;
     left: 0;
     bottom: 0;
     background-color: var(--nav);
     color: var(--text);
+    text-align: center;
 }
