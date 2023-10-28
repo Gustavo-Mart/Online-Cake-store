@@ -10,7 +10,6 @@
     font-family: 'Kameron', 'Tilt Prism', cursive;
     scrollbar-color: var(--textnav) var(--nav);
     scrollbar-width: thin;
-
 }
 
 ::selection {
@@ -28,15 +27,13 @@
     background-color: var(--textnav);
     border-radius: 1rem;
 }
+
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-.catego{
-    display: flex;
 }
 .menu{
     display: flex;
@@ -101,6 +98,7 @@ body{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--fontgrande);
 }
+
 .titlo{
     margin: 0 40% 0 0;
     width: fit-content;
@@ -129,15 +127,18 @@ body{
     min-height: 3rem;
     min-width: 16rem;
     width: 30rem;
-    padding: 0 .5rem;
+    padding: 0 1rem;
     color: var(--text);
     font-size: 15px;
     border: none;
-    border-radius: 6px 0 0 6px;
+    border-radius: 16px 0 0 16px;
     background-color: var(--nav);
+    transition: all .2s ease-in;
 }
 
 .input::placeholder{
+    font-size: 18px;
+    font-family: kameron;
     color: var(--text);
     opacity: 0.4;
 }
@@ -146,20 +147,29 @@ body{
     min-height: 3rem;
     padding: .5em 1em;
     border: none;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 16px 16px 0;
     background-color: var(--textnav);
     color: var(--text);
     font-size: 15px;
     cursor: pointer;
-    transition: background-color .1s ease-in;
+    transition: all .2s ease-in;
 }
-  
+
+.button--submit:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--nav);
+    border-radius: 0 6px 6px 0;
+    border-left: 0;
+}
+
 .button--submit:active {
     background-color: var(--nav);
 }
   
 .input:focus, .input:focus-visible {
     outline: none;
+    border-bottom: 2px solid var(--textnav);
+    border-radius: 6px 0 0 6px;
 }
 
 .images{
@@ -175,6 +185,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 1s ease;
 }
 
 .svg-menu .tooltiptext {
@@ -211,7 +222,9 @@ body{
 
 hr{
     margin: 0;
-    color: var(--nav);
+    border-color: var(--nav);
+    display: flex;
+    align-items: center;
     width: 10%;
 }
 
@@ -223,7 +236,7 @@ hr{
     margin-top: 2rem;
 }
 
-.card {
+.catego {
     color: var(--text);
     width: 10rem;
     height: 11rem;
@@ -232,24 +245,115 @@ hr{
     border-radius: 1rem;
     text-align: center;
     background-color: var(--nav);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
     margin: 0 .5em 0 ; /**/
 }
-.card:hover{
-    transition: .4s ease-in-out;
-    box-shadow: 0 4px 6px var(--textnav);
+.catego:hover{
+    box-shadow: 0 4px var(--textnav);
+    transform: translateY(-10px) scale(1.04);
 }
 
-.card h2 {
+.catego h2 {
     font-size: 22px;
     margin: 0;
 }
+
 .img-card{
     width: 100%;
+    height: 70%;
+    object-fit: cover;
     border-radius: .6rem;
 }
 
+.produtos{
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-produto{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 15rem;
+    height: 22rem;
+    display: relative;
+    padding: 1em;
+    background: var(--nav);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+   
+.card-img img{
+    width: 100%;
+    border-radius: .5rem;
+    transition: .5s ease;
+    height: 10rem;
+    object-fit:cover;
+}
+   
+.card svg{
+    stroke: var(--textnav);
+    width: 20px;
+    height: 20px;
+}
+   
+.card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4em;
+    border-top: 1px solid #ddd;
+    border-width: 50%;
+    padding-top: .5rem;
+}
+
+.text-title{
+    color: var(--textnav);
+    margin: 0;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+   
+.text-body{
+    line-break: anywhere;
+    color: var(--text);
+    margin: 0;
+    font-size: 1em;
+}
+
+.card-button{
+    border: 1px solid var(--textnav);
+    display: flex;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2%);
+}
+
+.card-button:hover {
+    background-color: var(--textnav);
+}
+
+
+
 footer{
+    margin-top: 5rem;
+    border-top: 2px solid var(--textnav);
     height: 10rem;
     width: 100%;
     left: 0;
