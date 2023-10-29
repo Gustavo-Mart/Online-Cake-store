@@ -27,6 +27,9 @@
     background-color: var(--textnav);
     border-radius: 1rem;
 }
+::-webkit-scrollbar:hover{
+    width: .6rem;
+}
 
 body{
     width: 100%;
@@ -35,6 +38,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .menu{
     display: flex;
     align-items: center;
@@ -93,7 +97,7 @@ body{
 }
  
 .pesquisa{
-    margin: 4rem 0 0 5rem;
+    margin: 5rem 0 0 5rem;
     color: #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--fontgrande);
@@ -113,13 +117,13 @@ body{
 
 .corpo{
     font-size: var(--fontpequena);
-    margin: .3em 0 0 0;
+    margin: .4rem 0 0 0;
 }
 
 .input-group {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-right: 1rem;
 }
   
@@ -221,7 +225,7 @@ body{
 }
 
 hr{
-    margin: 0;
+    margin: 0 0 2rem 0;
     border-color: var(--nav);
     display: flex;
     align-items: center;
@@ -233,7 +237,6 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .catego {
@@ -266,7 +269,7 @@ hr{
 }
 
 .produtos{
-    margin-top: 9rem;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -285,7 +288,7 @@ hr{
 
 .card{
     width: 15rem;
-    height: 22rem;
+    height: 20rem;
     display: relative;
     padding: 1em;
     background: var(--nav);
@@ -311,10 +314,9 @@ hr{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1.4em;
+    margin-top: 1rem;
     border-top: 1px solid #ddd;
-    border-width: 50%;
-    padding-top: .5rem;
+    padding-top: 1rem;
 }
 
 .text-title{
@@ -325,11 +327,13 @@ hr{
     line-height: 1.5;
 }
    
-.text-body{
-    line-break: anywhere;
+.text-body{    
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona os três pontos no final do texto */
+    white-space: nowrap; /* Impede a quebra de linha */
     color: var(--text);
     margin: 0;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .card-button{
@@ -340,16 +344,18 @@ hr{
     border-radius: 1rem;
     transition: .2s ease-in-out;
 }
-
-.card:hover {
-    transform: translateY(-2%);
+.card-button svg{
+    width: 24px;
+    height: 24px;
 }
 
 .card-button:hover {
     background-color: var(--textnav);
 }
 
-
+.card:hover {
+    transform: translateY(-1%);
+}
 
 footer{
     margin-top: 5rem;
