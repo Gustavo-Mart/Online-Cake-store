@@ -361,43 +361,54 @@ hr{
 footer{
     margin-top: 5rem;
     border-top: 2px solid var(--textnav);
-    height: 10rem;
+    height: max-content;
     width: 100%;
     left: 0;
     bottom: 0;
     background-color: var(--nav);
     color: var(--text);
-    text-align: center;
 }
+
 .footer-container{
     display: flex;
-    width: 80%;
     margin: 0 auto;
     padding: 1rem;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.footer-info{
+    justify-content: space-evenly;
     font-size: 24px;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info-left{
-    float: right;
-}
-.footer-img{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    gap: 2rem;
 }
 
 .footer-img .titulo{
     margin: 0;
 }
 
+.footer-img .cuerpo{
+    margin: 0;
+    font-size: 18px;
+}
+
 .social-media{
     display: flex;
     gap: 1.5rem;
+}
+
+.social-media a .tooltiptext {
+    font-size: 18px;
+    visibility: hidden;
+    width: fit-content;
+    background-color: var(--textnav);
+    color: var(--text);
+    text-align: center;
+    border-radius: 5px;
+    padding: .3rem;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-40%) translateY(-130%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-media a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
