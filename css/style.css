@@ -221,7 +221,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
 hr{
@@ -276,11 +275,10 @@ hr{
 }
 
 .container-produto{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    column-gap: 2rem;
-    row-gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -290,7 +288,6 @@ hr{
 .card{
     width: 15rem;
     height: 20rem;
-    display: relative;
     padding: 1em;
     background: var(--nav);
     transition: .2s ease-in-out;
@@ -361,10 +358,7 @@ hr{
 footer{
     margin-top: 5rem;
     border-top: 2px solid var(--textnav);
-    height: max-content;
     width: 100%;
-    left: 0;
-    bottom: 0;
     background-color: var(--nav);
     color: var(--text);
 }
@@ -375,7 +369,6 @@ footer{
     padding: 1rem;
     justify-content: space-evenly;
     font-size: 24px;
-    gap: 2rem;
 }
 
 .footer-img .titulo{
@@ -389,26 +382,6 @@ footer{
 
 .social-media{
     display: flex;
+    align-items: center;
     gap: 1.5rem;
-}
-
-.social-media a .tooltiptext {
-    font-size: 18px;
-    visibility: hidden;
-    width: fit-content;
-    background-color: var(--textnav);
-    color: var(--text);
-    text-align: center;
-    border-radius: 5px;
-    padding: .3rem;
-    position: absolute;
-    z-index: 1;
-    transform: translateX(-40%) translateY(-130%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.social-media a:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
 }
