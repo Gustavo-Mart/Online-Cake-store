@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pesquisa.css">
     <link rel="icon" href="/imgs/cake.png" type="image/png">
     <title>Tina Cakes</title>
 </head>
@@ -58,7 +59,86 @@
                 </button>
             </li>
         </ul>
-    </nav>    
+    </nav>
+    <div class="filter">
+        <div class="preco">
+            <p>Limite de preço:</p>
+            <input type="text" name="txt_limite" placeholder="R$">
+        </div>
+        <div class="tamanho">
+            <p>Tamanho:</p>
+            <div class="radio-container">
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option1" name="radio-group" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Grande</span>
+                  </label>
+                </div>
+              
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option2" name="radio-group" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Médio</span>
+                  </label>
+                </div>
+              
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option3" name="radio-group" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Pequeno</span>
+                  </label>
+                </div>
+            </div>
+        </div>
+        <div class="dieta">
+            <p>Dieta:</p>
+            <div class="radio-container">
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option1" name="radio-group2" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Vegano</span>
+                  </label>
+                </div>
+              
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option2" name="radio-group2" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Zero Glúten</span>
+                  </label>
+                </div>
+              
+                <div class="radio-wrapper">
+                  <label class="radio-button">
+                    <input id="option3" name="radio-group2" type="radio">
+                    <span class="radio-checkmark"></span>
+                    <span class="radio-label">Zero Lactose</span>
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                    <label class="radio-button">
+                      <input id="option3" name="radio-group2" type="radio">
+                      <span class="radio-checkmark"></span>
+                      <span class="radio-label">Sem Açúcar</span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+        <div class="sabor">
+            <p>Sabor:</p>
+            <select name="flavor">
+                <option value="">Selecione...</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="banana">Banana</option>
+                <option value="cenoura">Cenoura</option>
+              </select>
+        </div>
+    </div>
     <footer>
         <div class="footer-container">
                 <div class="footer-img">
@@ -84,5 +164,5 @@
                 </div>
         </div>
     </footer>
-    </body>
+</body>
 </html>

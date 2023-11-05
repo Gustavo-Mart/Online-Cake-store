@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&family=Tilt+Prism&display=swap');
+body{
+    height: 100vh;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav);
+    border: var(--textnav) 2px solid;
+    padding: 1.2rem;
+    min-width: 15rem;
+    width: 20%;
+    margin: 2rem 0 0 2rem;
+    border-radius: 15px;
+}
+
+.filter p{
+    color: var(--text);
+    font-size: var(--fontpequena);
+    margin: 0;
+}
+
+.preco input{
+    background-color: var(--nav);
+    color: var(--text);
+    font-size: 18px;
+    border: var(--textnav) 2px solid;
+    border-radius: 30rem;
+    padding: .5rem .5rem .5rem 1rem;
+    font-family: 'Kameron', 'Tilt Prism', cursive;
+    margin-top: .5rem;
+    width: 50%;
+}
+
+.preco input:focus{
+    outline: none;
+}
+
+.tamanho{
+    margin-top: .5rem;
+}
+
+.radio-container {
+    color: var(--text);
+}
+  
+.radio-wrapper {
+    margin-bottom: .7rem;
+    margin-top: 10px;
+}
+  
+.radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+  
+.radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid var(--textnav);
+    border-radius: 50%;
+}
+
+.radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--textnav);
+    transition: all 0.2s ease-in-out;
+}
+  
+.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+.radio-label {
+    font-size: 18px;
+}
+
+.sabor select{
+    background-color: var(--nav);
+    color: var(--text);
+    font-size: 18px;
+    border: var(--textnav) 2px solid;
+    border-radius: 10px;
+    padding: .5rem;
+    font-family: 'Kameron', 'Tilt Prism', cursive;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.sabor select option{
+    color: var(--text);
+    font-size: 16px;
+}
