@@ -60,85 +60,216 @@
             </li>
         </ul>
     </nav>
-    <div class="filter">
-        <div class="preco">
-            <p>Limite de preço:</p>
-            <input type="text" name="txt_limite" placeholder="R$">
-        </div>
-        <div class="tamanho">
-            <p>Tamanho:</p>
-            <div class="radio-container">
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option1" name="radio-group" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Grande</span>
-                  </label>
-                </div>
-              
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option2" name="radio-group" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Médio</span>
-                  </label>
-                </div>
-              
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option3" name="radio-group" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Pequeno</span>
-                  </label>
-                </div>
+    <div class="header">
+        <div class="filter">
+            <div class="preco">
+                <p>Limite de preço:</p>
+                <input type="text" name="txt_limite" placeholder="R$">
             </div>
-        </div>
-        <div class="dieta">
-            <p>Dieta:</p>
-            <div class="radio-container">
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option1" name="radio-group2" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Vegano</span>
-                  </label>
-                </div>
-              
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option2" name="radio-group2" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Zero Glúten</span>
-                  </label>
-                </div>
-              
-                <div class="radio-wrapper">
-                  <label class="radio-button">
-                    <input id="option3" name="radio-group2" type="radio">
-                    <span class="radio-checkmark"></span>
-                    <span class="radio-label">Zero Lactose</span>
-                  </label>
-                </div>
-                <div class="radio-wrapper">
+            <div class="tamanho">
+                <p>Tamanho:</p>
+                <div class="radio-container">
+                    <div class="radio-wrapper">
                     <label class="radio-button">
-                      <input id="option3" name="radio-group2" type="radio">
-                      <span class="radio-checkmark"></span>
-                      <span class="radio-label">Sem Açúcar</span>
+                        <input id="option1" name="radio-group" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Grande</span>
                     </label>
-                  </div>
+                    </div>
+                
+                    <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="option2" name="radio-group" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Médio</span>
+                    </label>
+                    </div>
+                
+                    <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="option3" name="radio-group" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Pequeno</span>
+                    </label>
+                    </div>
                 </div>
             </div>
-        <div class="sabor">
-            <p>Sabor:</p>
-            <select name="flavor">
-                <option value="">Selecione...</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="morango">Morango</option>
-                <option value="banana">Banana</option>
-                <option value="cenoura">Cenoura</option>
-              </select>
+            <div class="dieta">
+                <p>Dieta:</p>
+                <div class="radio-container">
+                    <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="option1" name="radio-group2" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Vegano</span>
+                    </label>
+                    </div>
+                
+                    <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="option2" name="radio-group2" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Zero Glúten</span>
+                    </label>
+                    </div>
+                
+                    <div class="radio-wrapper">
+                    <label class="radio-button">
+                        <input id="option3" name="radio-group2" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Zero Lactose</span>
+                    </label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <label class="radio-button">
+                        <input id="option3" name="radio-group2" type="radio">
+                        <span class="radio-checkmark"></span>
+                        <span class="radio-label">Sem Açúcar</span>
+                        </label>
+                    </div>
+                    </div>
+                </div>
+            <div class="sabor">
+                <p>Sabor:</p>
+                <select name="flavor">
+                    <option value="">Selecione...</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="morango">Morango</option>
+                    <option value="banana">Banana</option>
+                    <option value="cenoura">Cenoura</option>
+                </select>
+            </div>
+        </div>
+        <div class="pesq-produto">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">bla</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://placehold.co/600x400" class="img-card">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/imgs/bolochoc.jpg" class="img-card">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/imgs/bolochoc.jpg" class="img-card">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/imgs/bolochoc.jpg" class="img-card">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/imgs/bolochoc.jpg" class="img-card">
+                    </div>
+                    <div class="card-info">
+                        <p class="text-title">Product title</p>
+                        <p class="text-body">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-title">$499.49</span>
+                        <div class="card-button">
+                            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" fill="none">
+                                <path d="M5.57143 5.74074H33L29.5714 21.1481H9M29.5714 25.8889H10.1429L4.42857 1H1" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.2857 33C28.5481 33 29.5714 31.9387 29.5714 30.6296C29.5714 29.3205 28.5481 28.2592 27.2857 28.2592C26.0233 28.2592 25 29.3205 25 30.6296C25 31.9387 26.0233 33 27.2857 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4286 33C13.691 33 14.7143 31.9387 14.7143 30.6296C14.7143 29.3205 13.691 28.2592 12.4286 28.2592C11.1662 28.2592 10.1429 29.3205 10.1429 30.6296C10.1429 31.9387 11.1662 33 12.4286 33Z" stroke="#F9F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <footer>
         <div class="footer-container">
                 <div class="footer-img">

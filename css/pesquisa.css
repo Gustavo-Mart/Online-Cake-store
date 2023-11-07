@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kameron&family=Tilt+Prism&display=swap');
-body{
-    height: 100vh;
+
+
+.header{
+    display: grid;
+    grid-template-areas: "filter pesq-produto";
+    grid-area: "filter pesq-produto";
 }
-footer{
-    position: absolute;
-    bottom: 0;
+
+.pesq-produto{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    grid-area: pesq-produto;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter{
@@ -15,6 +27,7 @@ footer{
     padding: 1.2rem;
     min-width: 15rem;
     width: 20%;
+    height: fit-content;
     margin: 2rem 0 0 2rem;
     border-radius: 15px;
 }
