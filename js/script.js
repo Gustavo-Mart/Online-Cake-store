@@ -1,15 +1,25 @@
-const images = ["/imgs/bolochoc.jpg", "/imgs/cup.jpg", "/imgs/bolodeco.jpg", "/imgs/boloroxo.jpg"];
-const sliderImage = document.getElementById('slider-image');
 let currentIndex = 0;
+    const images = [
+        "/imgs/bolochoc.jpg",
+        "/imgs/bolodeco.jpg",
+        "/imgs/cup.jpg",
+        "/imgs/boloroxo.jpg"
+    ];
+    const sliderImage = document.getElementById("slider-image");
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % images.length;
-    sliderImage.style.opacity = 0;
-    setTimeout(() => {
-        sliderImage.src = images[currentIndex];
-        sliderImage.style.opacity = 0.5;
-        sliderImage.style.opacity = 0.7;
-        sliderImage.style.opacity = 1;
-    },500);
-}
-setInterval(nextSlide, 4000);
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        gsap.to(sliderImage, {
+            opacity: 0,
+            duration: 0.5,
+            onComplete: function() {
+                sliderImage.src = images[currentIndex];
+                gsap.to(sliderImage, {
+                    opacity: 1,
+                    duration: 0.5
+                });
+            }
+        });
+    }
+
+    setInterval(nextSlide, 3000);
