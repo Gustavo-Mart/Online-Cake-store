@@ -11,12 +11,12 @@ let currentIndex = 0;
         currentIndex = (currentIndex + 1) % images.length;
         gsap.to(sliderImage, {
             opacity: 0,
-            duration: 0.5,
+            duration: 0.2,
             onComplete: function() {
                 sliderImage.src = images[currentIndex];
                 gsap.to(sliderImage, {
                     opacity: 1,
-                    duration: 0.5
+                    duration: 1
                 });
             }
         });
