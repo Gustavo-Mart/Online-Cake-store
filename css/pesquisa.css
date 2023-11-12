@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kameron&family=Tilt+Prism&display=swap');
 
-
 .header{
     display: grid;
     grid-template-areas: "filter pesq-produto";
-    grid-area: "filter pesq-produto";
+    grid-area: "filter pesq-produto"
+                "filter pesq-produto";
 }
 
 .pesq-produto{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
     display: flex;
-    grid-area: pesq-produto;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 2rem;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    grid-area: pesq-produto;
 }
 
 .filter{
+    grid-area: filter;
     display: flex;
     flex-direction: column;
     background-color: var(--nav);

@@ -16,7 +16,7 @@ let currentIndex = 0;
                 sliderImage.src = images[currentIndex];
                 gsap.to(sliderImage, {
                     opacity: 1,
-                    duration: 1
+                    duration: .5
                 });
             }
         });
