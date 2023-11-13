@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&family=Tilt+Prism&display=swap');
+
+.grid-carrinho{
+    display: grid;
+    margin: 5rem 10% 0 10%;
+    grid-template-areas: "grid-prod grid-final";
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+/*1st Aba*/
+
+.grid-prod{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    grid-area: grid-prod;
+    background-color: var(--textnav);
+    border: var(--nav) 2px solid;
+}
+
+.prod{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--nav);
+    padding: 0.5rem;
+    width:auto;
+    border-radius: 1rem;
+    height: 10rem;
+    border: var(--nav) 2px solid;
+}
+
+.prod img{
+    border-radius: .5rem 0 0 .5rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.prod p{
+    margin: 0;
+    font-family: 'Kameron', serif;
+}
+
+.prod .nome{
+    color: var(--textnav);
+    text-decoration: underline 1px;
+    font-size: var(--font-media2);
+}
+
+.prod .desc{
+    color: var(--text);
+    font-size: var(--fontpequena);
+}
+
+.qntd{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: var(--text);
+    background-color: var(--nav);
+    background-image: none;
+    cursor: pointer;
+    border: var(--textnav) 2px solid;
+}
+  /* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 4em;
+    height: 2em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+  /* Arrow */
+.select::after {
+    content: '❯';
+    position: absolute;
+    color: var(--text);
+    top: 0;
+    right: 0;
+    padding: .3rem;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+  /* Transition */
+.select:hover::after {
+    color: #f39c12;
+}
+
+/*2nd Aba*/
+
+.grid-final{
+    grid-area: grid-final;
+    background-color: var(--textnav);
+    border: var(--nav) 2px solid;
+}
