@@ -13,6 +13,11 @@
     scrollbar-color: var(--textnav) var(--nav);
     scrollbar-width: thin;
     scroll-behavior: smooth;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 ::selection{
@@ -43,7 +48,6 @@ body{
     justify-content: space-between;
     border-bottom: 2px solid var(--textnav);
     position: sticky;
-    padding-top: .5rem;
     top: 0;
     left: 0;
     right: 0;
