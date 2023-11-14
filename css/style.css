@@ -346,12 +346,15 @@ hr{
 }
 
 footer{
+    position: relative;
+    display: block;
     width: 100%;
     background-color: var(--nav);
     color: var(--text);
 }
 
 .footer-container{
+    position: a;
     display: flex;
     margin: 0 auto;
     padding: 1rem;
