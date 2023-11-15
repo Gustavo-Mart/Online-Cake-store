@@ -37,10 +37,12 @@
 }
 
 body{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
 }
+
 
 .menu{
     display: flex;
@@ -350,7 +352,7 @@ hr{
 }
 
 footer{
-    position: relative;
+
     display: block;
     width: 100%;
     background-color: var(--nav);
@@ -358,7 +360,6 @@ footer{
 }
 
 .footer-container{
-    position: a;
     display: flex;
     margin: 0 auto;
     padding: 1rem;
@@ -379,13 +380,6 @@ footer{
     display: flex;
     align-items: center;
     gap: 1.5rem;
-}
-
-.social-media a svg:hover {
-    color: var(--textnav);
-    stroke: var(--textnav);
-    fill: var(--textnav);
-    transition: all .3s ease-in-out;
 }
 
 .custom-shape-divider-bottom-1699723448{

@@ -3,8 +3,8 @@
 .grid-carrinho{
     display: grid;
     margin: 3rem 10% 0 10%;
-    grid-template-areas: "grid-prod grid-final"
-                         "grid-prod grid-final";
+    grid-template-areas: 
+    "grid-prod grid-final";
     grid-template-columns: 1.7fr .7fr;
     gap: 1rem;
 }
@@ -61,7 +61,7 @@ hr{
 
 .textos .desc{
     color: var(--text);
-    font-size: var(--fontpequena);
+    font-size: 22px;
 }
 
 .qntd{
@@ -137,6 +137,17 @@ select::-ms-expand {
     color: var(--text);
     width: 100%;
     height: 2.5em;
+    transition: all .3s ease;
+}
+
+.btn-fim:hover{
+    background-color: var(--textnav);
+    color: var(--nav);
+    transform: scale(1.02);
+}
+
+.btn-fim:active{
+    transform: scale(1);
 }
 
 .ship{
@@ -192,6 +203,17 @@ select::-ms-expand {
     cursor: pointer;
     border-radius: 0 1rem 1rem 0;
     height: 2.5em;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    border-radius: .4rem 1rem 1rem .4rem;
+}
+
+.btn:active{
+    transform: scale(1);
+    border-radius: 0 1rem 1rem 0;
 }
 
 .payments{

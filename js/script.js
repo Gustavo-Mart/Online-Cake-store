@@ -11,7 +11,7 @@ function nextSlide() {
     currentIndex = (currentIndex + 1) % images.length;
     gsap.to(sliderImage, {
         opacity: 0,
-        duration: 0.2,
+        duration: 0.5,
         onComplete: function() {
             sliderImage.src = images[currentIndex];
             gsap.to(sliderImage, {
@@ -21,7 +21,5 @@ function nextSlide() {
         }
     });
 }
-
-    setInterval(nextSlide, 3000);
-    
+setInterval(nextSlide, 3000);
 lucide.createIcons();
